@@ -1,0 +1,56 @@
+.acknowledgement-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  border-top: 1px solid var(--gray-100);
+}
+
+.ack-card {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  background: var(--bg-light);
+  border-radius: var(--radius-lg);
+  border-left: 5px solid var(--accent-orange);
+  box-shadow: var(--shadow-md);
+}
+
+.ack-icon i {
+  font-size: 2.5rem;
+  color: var(--primary-navy);
+}
+
+.ack-header {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--primary-navy);
+  text-transform: uppercase;
+}
+
+.ack-header span {
+  color: var(--accent-orange);
+}
+
+.ack-text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ms-logo {
+  height: 40px;
+  width: auto;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .ack-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}

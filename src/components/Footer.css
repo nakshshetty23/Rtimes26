@@ -1,0 +1,112 @@
+/* Footer - Clean, Simple Design matching global palette */
+.site-footer {
+  background-color: #1a365d;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.footer-main {
+  padding: 50px 20px 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+/* Footer Section */
+.footer-section h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ed8936;
+  display: inline-block;
+  background: none;
+}
+
+/* Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  background: none;
+}
+
+.footer-section ul li a {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: none !important;
+  background-color: transparent !important;
+}
+
+.footer-section ul li a:hover {
+  color: #ed8936 !important;
+  padding-left: 5px;
+}
+
+/* Contact Info */
+.contact-info p,
+.conference-info p {
+  color: #ffffff !important;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 5px;
+  background: none !important;
+  background-color: transparent !important;
+}
+
+.contact-info p strong,
+.conference-info p strong {
+  color: #ed8936 !important;
+  font-weight: 600;
+  background: none !important;
+}
+
+.contact-info a {
+  color: #ed8936 !important;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #142d4c;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(237, 137, 54, 0.3);
+}
+
+.footer-bottom p {
+  color: #ffffff !important;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-bottom .managed-by {
+  color: #a0aec0 !important;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}

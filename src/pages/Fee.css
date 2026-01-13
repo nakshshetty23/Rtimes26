@@ -1,0 +1,340 @@
+/* ============================================
+   FEE PAGE STYLES - RTIMES 2026
+   Premium Conference Design
+   ============================================ */
+
+.page-wrapper {
+  background: var(--bg-white);
+}
+
+/* Page Header */
+.page-header {
+  background: var(--bg-gradient);
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Sections */
+.section-white {
+  background: var(--bg-white);
+  padding: 80px 20px;
+}
+
+.section-light {
+  background: var(--bg-light);
+  padding: 80px 20px;
+}
+
+.container-custom {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Section Heading */
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--primary-navy);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-heading span {
+  color: var(--accent-orange);
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--accent-orange);
+  border-radius: var(--radius-full);
+}
+
+.section-intro {
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+}
+
+/* Fee Table */
+.fee-table-wrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.fee-table th {
+  background: var(--primary-navy);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.fee-table th:first-child {
+  text-align: left;
+}
+
+.badge-early {
+  display: block;
+  background: var(--success);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.badge-regular {
+  display: block;
+  background: var(--accent-orange);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.date-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.fee-table td {
+  padding: 20px;
+  border-bottom: 1px solid var(--gray-200);
+  vertical-align: middle;
+}
+
+.fee-table td:first-child {
+  text-align: left;
+}
+
+.fee-table td:not(:first-child) {
+  text-align: center;
+}
+
+.fee-table tbody tr:hover {
+  background: var(--bg-light);
+}
+
+.category-subtext {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+.price-early {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.price-regular {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--error);
+}
+
+/* Includes Grid */
+.includes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.include-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 25px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-base);
+}
+
+.include-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.include-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-light);
+  color: var(--accent-orange);
+  border-radius: var(--radius-lg);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.include-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Notes Card */
+.notes-card {
+  background: #fef3cd;
+  border-left: 5px solid #ffc107;
+  border-radius: var(--radius-lg);
+  padding: 30px;
+}
+
+.notes-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.notes-header i {
+  font-size: 1.5rem;
+  color: #856404;
+}
+
+.notes-header h4 {
+  margin: 0;
+  color: #856404;
+  font-weight: 700;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notes-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  color: #856404;
+}
+
+.notes-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #856404;
+  font-weight: 700;
+}
+
+/* Payment CTA */
+.section-cta-alt {
+  background: var(--primary-navy);
+  padding: 60px 20px;
+}
+
+.payment-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cta-info h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.cta-info p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .includes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 80px 15px 50px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .section-white,
+  .section-light {
+    padding: 50px 15px;
+  }
+
+  .section-heading {
+    font-size: 1.6rem;
+  }
+
+  .includes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-actions {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cta-actions a {
+    width: 100%;
+    text-align: center;
+  }
+}

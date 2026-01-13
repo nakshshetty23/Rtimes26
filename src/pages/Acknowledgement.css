@@ -1,0 +1,68 @@
+/* ============================================
+   ACKNOWLEDGEMENT SECTION - RTIMES 2026
+   ============================================ */
+
+.acknowledgement-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  border-top: 1px solid var(--gray-100);
+}
+
+.ack-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background: var(--bg-light); 
+  border-radius: var(--radius-lg);
+  border-left: 6px solid var(--accent-orange);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-base);
+}
+
+/* Darkened Header */
+.ack-header {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #1a202c; /* Deep Dark Navy/Black for better visibility */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ack-header span {
+  color: #dd6b20; /* Darker Orange for contrast */
+}
+
+/* Darkened Main Body Text */
+.ack-text {
+  color: #2d3748; /* Darker Slate Gray for improved readability */
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Darkened Bold Text (Microsoft CMT service, Microsoft, etc.) */
+.ack-text strong {
+  color: #171923; /* Near Black to make the highlights pop */
+  font-weight: 700;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .acknowledgement-section {
+    padding: 40px 15px;
+  }
+  
+  .ack-card {
+    padding: 25px;
+  }
+  
+  .ack-header {
+    font-size: 1.1rem;
+  }
+  
+  .ack-text {
+    font-size: 0.95rem;
+  }
+}

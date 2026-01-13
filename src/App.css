@@ -1,0 +1,82 @@
+/* Global variables based on MITE INSPIRE design */
+:root {
+  --navy: #1a365d;
+  --navy-dark: #0f2744;
+  --orange: #ed8936;
+  --orange-light: #ff9966;
+  --white: #ffffff;
+  --light-bg: #f8f9fa;
+  --text-dark: #1a202c;
+  --text-light: #4a5568;
+  --text-muted: #718096;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--white);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+
+.site-wrapper {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+}
+
+main {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+
+/* Reusable Section Titles */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--navy);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.section-title span {
+  color: var(--orange);
+}
+
+/* Global button style inspired by MITE */
+.know-more-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #dee2e6;
+  color: #333;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.know-more-btn:hover {
+  background-color: var(--orange);
+  color: white;
+}

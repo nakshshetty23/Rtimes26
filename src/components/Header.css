@@ -1,0 +1,80 @@
+/* ============================================
+   TOP ALERT BAR - RTIMES 2026
+   ============================================ */
+.top-alert-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  background: linear-gradient(90deg, #e53e3e 0%, #c53030 100%);
+  padding: 8px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.alert-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.alert-icon {
+  font-size: 1.1rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.alert-text {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.alert-text strong {
+  font-weight: 700;
+}
+
+.alert-btn {
+  display: inline-block;
+  padding: 5px 16px;
+  background: #ffffff;
+  color: #c53030;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: var(--transition-base);
+}
+
+.alert-btn:hover {
+  background: var(--gray-100);
+  transform: scale(1.05);
+  color: #c53030;
+}
+
+/* Add space for fixed header + navbar */
+body {
+  padding-top: 45px;
+}
+
+@media (max-width: 768px) {
+  .alert-content {
+    gap: 10px;
+  }
+  
+  .alert-text {
+    font-size: 0.8rem;
+  }
+  
+  .alert-btn {
+    padding: 4px 12px;
+    font-size: 0.75rem;
+  }
+}
