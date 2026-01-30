@@ -162,7 +162,7 @@ const Navbar = () => {
             {/* Register Button */}
             <li className="nav-item nav-cta">
               <Link to="/fee" className="btn-register">
-                Register Now
+                Register
               </Link>
             </li>
           </ul>

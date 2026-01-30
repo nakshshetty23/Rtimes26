@@ -1,112 +1,108 @@
-/* Footer - Clean, Simple Design matching global palette */
-.site-footer {
-  background-color: #1a365d;
-  color: #ffffff;
-  margin-top: 0;
-}
+/* ===================================
+   RTIMES 2026 Footer - Clean & Minimal
+   =================================== */
 
-.footer-main {
-  padding: 50px 20px 40px;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
-
-@media (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    text-align: center;
-  }
-}
-
-/* Footer Section */
-.footer-section h4 {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #ed8936;
-  display: inline-block;
-  background: none;
-}
-
-/* Links */
-.footer-section ul {
-  list-style: none;
+.rtimes-footer {
+  background: linear-gradient(180deg, #0f172a 0%, #020617 100%) !important;
+  width: 100%;
   padding: 0;
   margin: 0;
+  border-top: 3px solid #f97316;
 }
 
-.footer-section ul li {
-  margin-bottom: 10px;
-  background: none;
+.rtimes-footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px 30px 30px;
 }
 
-.footer-section ul li a {
+.rtimes-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.rtimes-footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rtimes-footer-heading {
+  color: #f97316 !important;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.rtimes-footer-text {
   color: #ffffff !important;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  background: none !important;
-  background-color: transparent !important;
-}
-
-.footer-section ul li a:hover {
-  color: #ed8936 !important;
-  padding-left: 5px;
-}
-
-/* Contact Info */
-.contact-info p,
-.conference-info p {
-  color: #ffffff !important;
-  font-size: 0.95rem;
-  line-height: 1.8;
-  margin-bottom: 5px;
-  background: none !important;
-  background-color: transparent !important;
-}
-
-.contact-info p strong,
-.conference-info p strong {
-  color: #ed8936 !important;
-  font-weight: 600;
-  background: none !important;
-}
-
-.contact-info a {
-  color: #ed8936 !important;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-  background-color: #142d4c;
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid rgba(237, 137, 54, 0.3);
-}
-
-.footer-bottom p {
-  color: #ffffff !important;
+  opacity: 0.85;
+  font-size: 1rem;
+  line-height: 1.7;
   margin: 0;
-  font-size: 0.9rem;
+  padding: 0;
 }
 
-.footer-bottom .managed-by {
-  color: #a0aec0 !important;
-  font-size: 0.85rem;
-  margin-top: 5px;
+.rtimes-footer-date {
+  color: #fbbf24 !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.rtimes-footer-link {
+  color: #f97316 !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.rtimes-footer-link:hover {
+  color: #fbbf24 !important;
+}
+
+.rtimes-footer-copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+  text-align: center;
+}
+
+.rtimes-footer-copyright p {
+  color: #ffffff !important;
+  opacity: 0.5;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rtimes-footer-wrapper {
+    padding: 40px 20px 20px 20px;
+  }
+  
+  .rtimes-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .rtimes-footer-col {
+    align-items: center;
+  }
+  
+  .rtimes-footer-heading {
+    font-size: 1.4rem;
+  }
+  
+  .rtimes-footer-text {
+    font-size: 0.95rem;
+  }
 }

@@ -1,41 +1,76 @@
 /* ============================================
    FEE PAGE STYLES - RTIMES 2026
-   Premium Conference Design
+   Modern Futuristic Design
    ============================================ */
 
 .page-wrapper {
-  background: var(--bg-white);
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 50%, #f8fafc 100%);
 }
 
 /* Page Header */
 .page-header {
-  background: var(--bg-gradient);
-  padding: 100px 20px 60px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  padding: 130px 20px 70px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 30% 0%, rgba(249, 115, 22, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 100%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Animated grid pattern */
+.page-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(249, 115, 22, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(249, 115, 22, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
 }
 
 .page-title {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-family: 'Space Grotesk', var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 700;
   color: #ffffff;
   margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 1px;
 }
 
 .page-subtitle {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.75);
+  position: relative;
+  z-index: 1;
 }
 
-/* Sections */
+/* Sections - Reduced padding */
 .section-white {
-  background: var(--bg-white);
-  padding: 80px 20px;
+  background: transparent;
+  padding: 60px 20px;
 }
 
 .section-light {
-  background: var(--bg-light);
-  padding: 80px 20px;
+  background: rgba(248, 250, 252, 0.5);
+  padding: 60px 20px;
 }
 
 .container-custom {
@@ -45,19 +80,23 @@
 
 /* Section Heading */
 .section-heading {
-  font-family: var(--font-heading);
+  font-family: 'Space Grotesk', var(--font-heading);
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
-  color: var(--primary-navy);
+  color: #0f172a;
   text-transform: uppercase;
   margin-bottom: 20px;
   position: relative;
   padding-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .section-heading span {
-  color: var(--accent-orange);
+  background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .section-heading::after {
@@ -66,18 +105,18 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 80px;
   height: 4px;
-  background: var(--accent-orange);
+  background: linear-gradient(90deg, #f97316, #fbbf24);
   border-radius: var(--radius-full);
 }
 
 .section-intro {
   text-align: center;
-  color: var(--text-secondary);
-  max-width: 700px;
-  margin: 0 auto 50px;
-  line-height: 1.7;
+  color: #475569;
+  max-width: 750px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
 }
 
 /* Fee Table */
@@ -184,62 +223,78 @@
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  padding: 25px;
-  background: var(--white);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
-  transition: var(--transition-base);
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(15, 23, 42, 0.05);
 }
 
 .include-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+  border-color: rgba(249, 115, 22, 0.2);
 }
 
 .include-icon {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-light);
-  color: var(--accent-orange);
-  border-radius: var(--radius-lg);
-  font-size: 1.3rem;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%);
+  color: #f97316;
+  border-radius: 12px;
+  font-size: 1.2rem;
   flex-shrink: 0;
 }
 
 .include-card p {
   margin: 0;
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.5;
+  color: #64748b;
+  font-size: 0.92rem;
+  line-height: 1.6;
 }
 
 /* Notes Card */
 .notes-card {
-  background: #fef3cd;
-  border-left: 5px solid #ffc107;
-  border-radius: var(--radius-lg);
-  padding: 30px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-left: none;
+  border-radius: 20px;
+  padding: 28px 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.notes-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 60%);
+  transform: translate(30%, -30%);
 }
 
 .notes-header {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 .notes-header i {
-  font-size: 1.5rem;
-  color: #856404;
+  font-size: 1.3rem;
+  color: #f97316;
 }
 
 .notes-header h4 {
   margin: 0;
-  color: #856404;
+  color: #ffffff;
   font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .notes-list {
@@ -250,23 +305,37 @@
 
 .notes-list li {
   position: relative;
-  padding-left: 25px;
-  margin-bottom: 12px;
-  color: #856404;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.92rem;
 }
 
 .notes-list li::before {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #856404;
+  color: #f97316;
   font-weight: 700;
 }
 
 /* Payment CTA */
 .section-cta-alt {
-  background: var(--primary-navy);
-  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-cta-alt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(249, 115, 22, 0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .payment-cta {
@@ -275,12 +344,15 @@
   justify-content: space-between;
   gap: 30px;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
 
 .cta-info h3 {
   color: #ffffff;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+  font-family: 'Space Grotesk', var(--font-heading);
+  font-size: 1.6rem;
+  margin-bottom: 8px;
 }
 
 .cta-info p {
@@ -303,7 +375,7 @@
 
 @media (max-width: 768px) {
   .page-header {
-    padding: 80px 15px 50px;
+    padding: 100px 15px 50px;
   }
 
   .page-title {
@@ -312,15 +384,20 @@
 
   .section-white,
   .section-light {
-    padding: 50px 15px;
+    padding: 40px 15px;
   }
 
   .section-heading {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .includes-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .include-card {
+    padding: 18px;
   }
 
   .payment-cta {
@@ -336,5 +413,9 @@
   .cta-actions a {
     width: 100%;
     text-align: center;
+  }
+
+  .section-cta-alt {
+    padding: 40px 15px;
   }
 }

@@ -1,38 +1,5 @@
 html {
     scroll-behavior: smooth;
-  }
-
-/* FOOTER GLOBAL OVERRIDES - Force visibility */
-.site-footer,
-.site-footer * {
-    color: #ffffff !important;
-    background-color: transparent !important;
-}
-
-.site-footer .footer-main {
-    background-color: #1a365d !important;
-}
-
-.site-footer .footer-bottom {
-    background-color: #142d4c !important;
-}
-
-.site-footer a,
-.site-footer ul li a,
-.site-footer .footer-section a,
-.site-footer .footer-section ul li a {
-    color: #ffffff !important;
-    background: none !important;
-    background-color: transparent !important;
-}
-
-.site-footer .contact-info a {
-    color: #ed8936 !important;
-}
-
-.site-footer a:hover,
-.site-footer ul li a:hover {
-    color: #ed8936 !important;
 }
 
 nav a{
@@ -80,20 +47,6 @@ a:link {
 } 
 a:hover { 
     text-decoration: none; 
-} 
-footer{
-    height: 70px;
-    margin-top: 50px;
-}
-.para-footer{
-    color: white;
-    font-size: 0.85rem;
-    padding-top: 12px;
-}
-.para-footer1{
-    color: white;
-    font-size: 0.85rem;
-    color: rgba(157, 162, 167, 0.856);   
 }
 .size{
     width: 48%;
@@ -282,41 +235,4 @@ footer{
         font-size: 15px;
     }
 }
-
-/* =============================================
-   FOOTER FINAL OVERRIDES - HIGHEST PRIORITY
-   ============================================= */
-footer.inspire-footer,
-footer.inspire-footer *,
-.inspire-footer,
-.inspire-footer * {
-    color: #ffffff !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-footer.inspire-footer a,
-footer.inspire-footer ul li a,
-footer.inspire-footer .footer-column ul li a,
-.inspire-footer a,
-.inspire-footer ul li a,
-.inspire-footer .footer-column ul li a {
-    color: #ffffff !important;
-    text-decoration: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-footer.inspire-footer .footer-contact-details a,
-.inspire-footer .footer-contact-details a {
-    color: #ed8936 !important;
-}
-
-footer.inspire-footer a:hover,
-footer.inspire-footer ul li a:hover,
-.inspire-footer a:hover,
-.inspire-footer ul li a:hover {
-    color: #ed8936 !important;
-}
-
 

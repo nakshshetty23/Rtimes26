@@ -1,13 +1,15 @@
 /* ============================================
    PREMIUM NAVBAR STYLES - RTIMES 2026
+   Modern Futuristic Design
    ============================================ */
 
 /* Base Navbar */
 .premium-navbar {
   padding: 15px 0;
-  transition: all 0.4s ease;
-  z-index: 1000;
-  top: 40px !important; /* Position below the alert bar */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1050 !important; /* Below header bar (1100) but above content */
+  top: 45px !important; /* Position below the alert bar */
+  position: fixed !important;
 }
 
 /* Transparent State (at top of page) */
@@ -17,7 +19,7 @@
 }
 
 .navbar-transparent .nav-link {
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .navbar-transparent .navbar-brand {
@@ -32,15 +34,18 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Scrolled State (solid background) */
+/* Scrolled State (solid background with glass effect) */
 .navbar-scrolled {
-  background: var(--primary-navy) !important;
+  background: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   padding: 10px 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .navbar-scrolled .nav-link {
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 /* Brand / Logo */
@@ -101,6 +106,7 @@
   transition: var(--transition-base);
   position: relative;
   border-radius: var(--radius-md);
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -183,20 +189,21 @@
 
 .btn-register {
   display: inline-block;
-  padding: 10px 24px;
-  background: var(--accent-orange);
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%);
   color: #ffffff !important;
   font-weight: 600;
   font-size: 0.9rem;
   border-radius: var(--radius-full);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  transition: var(--transition-base);
-  box-shadow: 0 4px 15px rgba(237, 137, 54, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(237, 137, 54, 0.35);
+  border: none;
 }
 
 .btn-register:hover {
-  background: var(--accent-orange-dark);
+  background: linear-gradient(135deg, #dd6b20 0%, #c05621 100%);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(237, 137, 54, 0.4);
   color: #ffffff !important;

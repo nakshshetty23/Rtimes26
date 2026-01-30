@@ -1,389 +1,348 @@
 /* ========================================
-   TRACKS PAGE - Premium Design
+   TRACKS PAGE - Modern Futuristic Design
+   RTIMES 2026
    ======================================== */
 
-.tracks-page {
-  padding-top: 0;
+/* Page Wrapper */
+.page-wrapper {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 50%, #f8fafc 100%);
+  min-height: 100vh;
 }
 
-/* Hero Section */
-.tracks-hero {
-  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-navy-light) 100%);
-  padding: 100px 20px 80px;
+/* Page Header - Hero Section */
+.page-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  padding: 140px 20px 80px;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-.tracks-hero::before {
+/* Animated background grid */
+.page-header::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  opacity: 0.5;
+  background-image: 
+    linear-gradient(rgba(249, 115, 22, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(249, 115, 22, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridFlow 20s linear infinite;
 }
 
-.tracks-hero h1 {
-  color: var(--bg-white);
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
+@keyframes gridFlow {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
 }
 
-.tracks-hero h1 span {
-  color: var(--accent-orange);
-}
-
-.tracks-intro {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
-  position: relative;
-  z-index: 1;
-}
-
-/* Main Content Section */
-.tracks-content {
-  padding: 80px 20px;
-  background: var(--bg-light);
-}
-
-.tracks-container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-/* Tracks Grid */
-.tracks-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-}
-
-/* Track Card */
-.track-card {
-  background: var(--bg-white);
-  border-radius: 16px;
-  padding: 0;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(10, 22, 40, 0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.track-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.track-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(10, 22, 40, 0.15);
-}
-
-/* Card Header with Icon */
-.track-header {
-  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-navy-light) 100%);
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-.track-header::before {
+/* Glowing orb effect */
+.page-header::after {
   content: '';
   position: absolute;
-  top: -50%;
-  right: -50%;
-  width: 100%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-  transition: transform 0.5s ease;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 60%);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite;
 }
 
-.track-card:hover .track-header::before {
-  transform: translateX(-20%) translateY(20%);
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, 30px) scale(1.1); }
 }
 
-/* Track Number Badge */
-.track-number {
-  width: 50px;
-  height: 50px;
-  background: var(--accent-orange);
-  border-radius: 12px;
+.page-title {
+  color: #ffffff;
+  font-family: 'Space Grotesk', 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 1px;
+}
+
+.page-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  position: relative;
+  z-index: 2;
+}
+
+/* Section White - Tracks Content */
+.section-white {
+  padding: 70px 20px;
+  background: transparent;
+}
+
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Intro Text */
+.intro-text {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.8;
+}
+
+/* Tracks List Grid */
+.tracks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+/* Track Item Card */
+.track-item-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.track-item-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(15, 23, 42, 0.12);
+  border-color: rgba(249, 115, 22, 0.2);
+}
+
+/* Animated top border on hover */
+.track-item-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f97316 0%, #fbbf24 50%, #06b6d4 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.track-item-card:hover::before {
+  opacity: 1;
+}
+
+/* Track Header */
+.track-item-card .track-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 25px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: var(--bg-white);
-  flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(242, 116, 53, 0.4);
+  gap: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shimmer effect on hover */
+.track-item-card .track-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+  transition: left 0.6s ease;
+}
+
+.track-item-card:hover .track-header::before {
+  left: 100%;
 }
 
 /* Track Icon */
-.track-icon {
-  width: 60px;
-  height: 60px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 50%;
+.track-item-card .track-icon {
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.track-item-card .track-icon i {
+  font-size: 1.5rem;
+  color: #ffffff;
   transition: all 0.3s ease;
 }
 
-.track-icon i {
-  font-size: 1.5rem;
-  color: var(--bg-white);
+.track-item-card:hover .track-icon {
+  background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
+  border-color: transparent;
+  transform: scale(1.1) rotate(-5deg);
 }
 
-.track-card:hover .track-icon {
-  background: var(--accent-orange);
-  transform: scale(1.1) rotate(5deg);
+/* Track Title Section */
+.track-title-section {
+  flex: 1;
 }
 
-/* Track Title */
-.track-title {
-  color: var(--bg-white);
+.track-label {
+  display: inline-block;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.track-name {
+  color: #ffffff;
+  font-family: 'Space Grotesk', 'Poppins', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.4;
   margin: 0;
-  flex: 1;
 }
 
-/* Card Content */
-.track-content {
-  padding: 25px 30px 30px;
-}
-
+/* Track Description */
 .track-description {
-  color: var(--text-light);
+  padding: 24px 25px;
+  color: #64748b;
   font-size: 0.95rem;
   line-height: 1.7;
   margin: 0;
+  background: #ffffff;
 }
 
-/* Note Section */
-.tracks-note {
-  max-width: 1000px;
-  margin: 60px auto 0;
-  padding: 0 20px;
-}
-
-.note-card {
-  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-navy-light) 100%);
-  border-radius: 16px;
-  padding: 40px;
+/* Info Note Card */
+.info-note {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 20px;
+  padding: 30px 35px;
   display: flex;
   align-items: flex-start;
-  gap: 25px;
-  box-shadow: 0 10px 40px rgba(10, 22, 40, 0.2);
+  gap: 20px;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.2);
   position: relative;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.note-card::before {
+/* Decorative glow */
+.info-note::before {
   content: '';
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(242, 116, 53, 0.3) 0%, transparent 70%);
-  border-radius: 50%;
-  transform: translate(30%, -30%);
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 70% 20%, rgba(249, 115, 22, 0.1) 0%, transparent 40%);
+  pointer-events: none;
 }
 
-.note-icon {
-  width: 60px;
-  height: 60px;
-  background: var(--accent-orange);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.note-icon i {
+.info-note i {
   font-size: 1.5rem;
-  color: var(--bg-white);
+  color: #f97316;
+  flex-shrink: 0;
+  margin-top: 3px;
 }
 
-.note-content {
-  flex: 1;
-  position: relative;
-  z-index: 1;
-}
-
-.note-content h3 {
-  color: var(--bg-white);
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0 0 15px 0;
-}
-
-.note-content p {
+.info-note p {
   color: rgba(255, 255, 255, 0.85);
   font-size: 1rem;
   line-height: 1.7;
   margin: 0;
-}
-
-.note-content strong {
-  color: var(--accent-orange);
-}
-
-/* CTA Section */
-.tracks-cta {
-  text-align: center;
-  margin-top: 60px;
-  padding: 0 20px;
-}
-
-.tracks-cta p {
-  color: var(--text-light);
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-}
-
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.cta-buttons .btn {
-  padding: 15px 35px;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.cta-buttons .btn-primary {
-  background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-light) 100%);
-  color: var(--bg-white);
-  border: none;
-  box-shadow: 0 4px 15px rgba(242, 116, 53, 0.4);
-}
-
-.cta-buttons .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(242, 116, 53, 0.5);
-}
-
-.cta-buttons .btn-outline {
-  background: transparent;
-  color: var(--primary-navy);
-  border: 2px solid var(--primary-navy);
-}
-
-.cta-buttons .btn-outline:hover {
-  background: var(--primary-navy);
-  color: var(--bg-white);
-  transform: translateY(-3px);
+  position: relative;
+  z-index: 1;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .tracks-hero {
-    padding: 80px 20px 60px;
+  .page-header {
+    padding: 110px 20px 60px;
   }
 
-  .tracks-hero h1 {
-    font-size: 2rem;
+  .page-title {
+    font-size: 2.2rem;
   }
 
-  .tracks-intro {
+  .page-subtitle {
     font-size: 1rem;
   }
 
-  .tracks-content {
+  .section-white {
     padding: 50px 15px;
   }
 
-  .tracks-grid {
+  .tracks-list {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .track-header {
+  .track-item-card .track-header {
     padding: 20px;
-    flex-wrap: wrap;
   }
 
-  .track-number {
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
+  .track-item-card .track-icon {
+    width: 48px;
+    height: 48px;
   }
 
-  .track-icon {
-    width: 45px;
-    height: 45px;
+  .track-item-card .track-icon i {
+    font-size: 1.3rem;
   }
 
-  .track-icon i {
-    font-size: 1.2rem;
-  }
-
-  .track-title {
+  .track-name {
     font-size: 1rem;
   }
 
-  .track-content {
+  .track-description {
     padding: 20px;
   }
 
-  .note-card {
+  .info-note {
     flex-direction: column;
     padding: 25px;
-    gap: 20px;
-  }
-
-  .note-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .cta-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cta-buttons .btn {
-    width: 100%;
-    max-width: 280px;
-    justify-content: center;
+    gap: 15px;
   }
 }
 
-/* Animation delays for staggered effect */
-.track-card:nth-child(1) { transition-delay: 0.1s; }
-.track-card:nth-child(2) { transition-delay: 0.15s; }
-.track-card:nth-child(3) { transition-delay: 0.2s; }
-.track-card:nth-child(4) { transition-delay: 0.25s; }
-.track-card:nth-child(5) { transition-delay: 0.3s; }
-.track-card:nth-child(6) { transition-delay: 0.35s; }
-.track-card:nth-child(7) { transition-delay: 0.4s; }
-.track-card:nth-child(8) { transition-delay: 0.45s; }
+/* Staggered animation on scroll */
+.track-item-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.track-item-card:nth-child(1) { animation-delay: 0.1s; }
+.track-item-card:nth-child(2) { animation-delay: 0.15s; }
+.track-item-card:nth-child(3) { animation-delay: 0.2s; }
+.track-item-card:nth-child(4) { animation-delay: 0.25s; }
+.track-item-card:nth-child(5) { animation-delay: 0.3s; }
+.track-item-card:nth-child(6) { animation-delay: 0.35s; }
+.track-item-card:nth-child(7) { animation-delay: 0.4s; }
+.track-item-card:nth-child(8) { animation-delay: 0.45s; }

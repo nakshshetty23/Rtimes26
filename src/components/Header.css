@@ -1,62 +1,71 @@
 /* ============================================
    TOP ALERT BAR - RTIMES 2026
+   Modern Futuristic Design
    ============================================ */
 .top-alert-bar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1100;
-  background: linear-gradient(90deg, #e53e3e 0%, #c53030 100%);
-  padding: 8px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1100 !important;
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  padding: 12px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(249, 115, 22, 0.2);
 }
 
 .alert-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 18px;
   flex-wrap: wrap;
 }
 
 .alert-icon {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   animation: pulse 2s infinite;
+  filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.6));
 }
 
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  50% { transform: scale(1.15); }
 }
 
 .alert-text {
   color: #ffffff;
   font-size: 0.9rem;
   font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
 .alert-text strong {
   font-weight: 700;
+  color: #f97316;
+  text-shadow: 0 0 10px rgba(249, 115, 22, 0.4);
 }
 
 .alert-btn {
   display: inline-block;
-  padding: 5px 16px;
-  background: #ffffff;
-  color: #c53030;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: #ffffff;
   font-size: 0.8rem;
   font-weight: 700;
   border-radius: var(--radius-full);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  transition: var(--transition-base);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
 }
 
 .alert-btn:hover {
-  background: var(--gray-100);
-  transform: scale(1.05);
-  color: #c53030;
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 25px rgba(249, 115, 22, 0.5);
+  color: #ffffff;
 }
 
 /* Add space for fixed header + navbar */

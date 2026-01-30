@@ -1,14 +1,18 @@
-/* Global variables based on MITE INSPIRE design */
+/* Global variables based on Modern Futuristic design */
 :root {
-  --navy: #1a365d;
-  --navy-dark: #0f2744;
-  --orange: #ed8936;
-  --orange-light: #ff9966;
+  --navy: #0f172a;
+  --navy-dark: #020617;
+  --navy-light: #1e293b;
+  --orange: #f97316;
+  --orange-light: #fb923c;
+  --orange-dark: #ea580c;
+  --amber: #fbbf24;
+  --cyan: #06b6d4;
   --white: #ffffff;
-  --light-bg: #f8f9fa;
-  --text-dark: #1a202c;
-  --text-light: #4a5568;
-  --text-muted: #718096;
+  --light-bg: #f8fafc;
+  --text-dark: #0f172a;
+  --text-light: #475569;
+  --text-muted: #64748b;
 }
 
 * {
@@ -17,7 +21,7 @@
   padding: 0;
 }
 
-html, body {
+html {
   font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   color: var(--text-dark);
@@ -25,6 +29,17 @@ html, body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--white);
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 #root {
@@ -43,10 +58,18 @@ html, body {
 }
 
 main {
-  flex: 1;
+  flex: 1 0 auto;
   margin: 0;
   padding: 0;
   background-color: var(--white);
+}
+
+/* Footer will stick to bottom */
+.site-footer {
+  flex-shrink: 0;
+  width: 100%;
+  display: block !important;
+  visibility: visible !important;
 }
 
 /* Reusable Section Titles */
